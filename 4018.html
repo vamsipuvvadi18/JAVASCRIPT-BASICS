@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            background-image: url('https://2.bp.blogspot.com/-BmdZva4ODqg/VSOGIpdxioI/AAAAAAAABN4/7GSbWfMzuqc/s1600/01.jpg');
+            background-size: cover;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #006400;
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        header img {
+            max-height: 50px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-left: 20px;
+        }
+
+        /* Container */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        /* Main Content */
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        main article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        main article h2 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #228B22;
+        }
+
+        main article .meta {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        main article img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main article p {
+            margin-bottom: 15px;
+        }
+
+        main article .read-more {
+            display: inline-block;
+            background-color: #006400;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        main article .read-more:hover {
+            background-color: #228B22;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+        }
+
+        aside section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        aside section h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        aside section ul {
+            list-style: none;
+        }
+
+        aside section ul li {
+            margin-bottom: 10px;
+        }
+
+        aside section ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        aside section ul li a:hover {
+            color: #006400;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #006400;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            aside {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Match Reviews</a></li>
+                <li><a href="#">Player Profiles</a></li>
+                <li><a href="#">Tournament News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Cricket Craze</h1>
+        <img src="https://vistanewsonline.com/wp-content/uploads/2024/06/India-beat-South-Africa-by-7-runs-ICC-T20-World.jpg" alt="Logo">
+    </header>
+
+    <div class="container">
+        <main>
+            <article id="default">
+                <h2>Latest Cricket Updates</h2>
+                <p class="meta">By Vamsi | August 18, 2024</p>
+                <img src="https://vistanewsonline.com/wp-content/uploads/2024/06/India-beat-South-Africa-by-7-runs-ICC-T20-World.jpg" width="700">
+                <p>"Stay updated with the latest cricket matches, scores, and highlights. From thrilling T20s to intense Test matches, our blog covers it all. Dive into expert analysis and in-depth reviews of your favorite matches and players."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post1">
+                <h2>Top Performers of the Season</h2>
+                <p class="meta">By Vamsi | August 16, 2024</p>
+                <img src="https://th.bing.com/th/id/R.73d2e693244c1f717d461e5219a0ebe3?rik=zT5ycCKgjjInhg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-WbbW34_hy00%2fTw34xPTGGRI%2fAAAAAAAAEvM%2fVn0PdaKoMLc%2fs1600%2fCricket%2bPlayers%2bImages10.jpg&ehk=LXhL1wAfwj1mAJBjLm%2b6P2Wm2kBfJllywckE633fSkU%3d&risl=&pid=ImgRaw&r=0" width="700">
+                <p>"Check out the top performers in the current cricket season. From record-breaking innings to exceptional bowling spells, our analysis highlights the stars who are making a mark on the cricket world."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post2">
+                <h2>Upcoming Tournaments</h2>
+                <p class="meta">By Vamsi | August 17, 2024</p>
+                <img src="https://th.bing.com/th/id/OIP.UsIjFYPuUOtHexVZVsmLMAAAAA?rs=1&pid=ImgDetMain" width="700">
+                <p>"Get ready for the most anticipated cricket tournaments of the year. Our blog provides a complete guide to the upcoming matches, teams to watch, and key players who could turn the tide in their team's favor."</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+
+            <article id="post3">
+                <h2>Historic Moments in Cricket</h2>
+                <p class="meta">By Vamsi | August 18, 2024</p>
+                <img src="https://th.bing.com/th/id/R.2287070509a115f661a99c2017169b2a?rik=JJyc0tgttkJtkA&riu=http%3a%2f%2f4.bp.blogspot.com%2f-s2yu81z1ZRg%2fUck9EiLojrI%2fAAAAAAAAQ34%2fjQfVQdGiVW4%2fs1600%2fIndian-players-lift-the-World-Cup-trophy-1983.jpg&ehk=he8yUccqqFKt2sE1995uksXnR4Ox8m8wYotalQb97r0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1"</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </main>
+
+        <aside>
+            <section>
+                <h3>Trending Topics</h3>
+                <ul>
+                    <li><a href="#post1">Top Performers</a></li>
+                    <li><a href="#post2">Upcoming Tournaments</a></li>
+                    <li><a href="#post3">Historic Moments</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Match Reviews</a></li>
+                    <li><a href="#">Player Profiles</a></li>
+                    <li><a href="#">Tournament News</a></li>
+                    <li><a href="#">Cricket History</a></li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Contact us at: vamsipuvvadi123@gmail.com</p>
+        <p>Follow us on 
+            <a href="#">Twitter</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Instagram</a>
+        </p>
+        <p
